@@ -1,0 +1,458 @@
+/*start global*/
+*{
+    box-sizing:border-box
+}
+body{
+    margin:0px;
+    perspective:500px;
+ 
+}
+/*end global*/
+/*start my framework*/
+.center{
+    text-align:center
+}
+.overLay{
+
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.6);
+    overflow:hidden;
+}
+.fix{
+    clear:both;
+}
+
+@media (max-width:767px) { /*for mobile */
+    .container{
+        padding:0 15px;
+        margin:0 auto;
+        transform-style:preserve-3d;
+    }
+}
+
+@media (min-width:768px) { /*for small screens */
+    .container{
+        width:720px;
+        padding:0 15px;
+        margin:0 auto;
+    }
+}
+
+@media (min-width:992px) { /*for meduim screens*/
+    .container{
+        width:940px;
+        padding:0 15px;
+        margin:0 auto;
+    }
+}
+
+@media (min-width:1200px) { /*for large screens */
+    .container{
+        width:1170;
+        padding:0 15px;
+        margin:0 auto;  
+        transform-style:preserve-3d;
+    }
+    
+}
+
+
+/*end my framework*/
+/*start header*/
+header{
+    background:url('../images/header.png')fixed;
+    background-size:cover;
+    overflow:hidden;
+    transform-style:preserve-3d
+}
+header .logo{
+    width:50%;
+    float:left;
+    margin-top:20px;
+}
+header .logo h2{
+    font-weight:normal;
+    color:#fff;
+    text-transform:uppercase;
+    margin-left:10px;
+
+}
+header .logo h2 span{
+    color:#F1CA05;
+}
+header nav {
+    width:50%;
+    float:right;
+    position:relative;
+    transform-style:preserve-3d;
+    margin-top:20px;
+}
+header nav ul{
+    list-style:none;
+    position:relative;
+    padding-left:0px;
+    margin-top:25px;
+    font-size:19px;
+    transform-style:preserve-3d
+   
+}
+header nav ul li{
+    display:inline-block;
+    color:#fff;
+    text-align:center;
+    text-transform:capitalize;
+    padding-bottom:7px;
+    
+}
+header nav ul li:not(:last-child){
+    margin-right:20%;
+}
+header nav ul li:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+    border-bottom:2px solid#F1CA05;
+}
+header nav ul .active{
+    transform:scale(1.1);
+    border-bottom:2px solid#F1CA05;
+}
+header .info{
+    color:#fff;
+    width:50%;
+}
+header .info h1{
+
+    font-family:"Cormorant Upright";
+    text-transform:capitalize;
+    font-size:50px;
+    color:#e7e3e3;
+}
+header .info h1 span{
+    color:#F1CA05;
+}
+header .info p{
+    font-size:20px;
+    font-style:italic;
+    line-height:1.7;
+    font-family:"Satisfy";
+    color:#727272;
+    text-align:justify;
+
+}
+header .info button{
+    background-color:#F1CA05;
+    color:#000;
+    border:1px solid#F1CA05;
+    padding:10px;
+    width:180px;
+    font-size:20px;
+    text-transform:capitalize;
+    font-weight:bold;
+    font-style:italic;
+    margin-top:40px;
+    font-family:"Cormorant Upright";
+    border-radius:5px;
+
+}
+header .info button:hover{
+    cursor:pointer;
+}
+@media (max-width:767px) { /*for mobile */
+  header nav{
+      display:none;
+  }
+  header .info{
+      margin:0 auto;
+      width:100%;
+  }
+  header .info h1{
+      font-size:40px;
+
+  }
+  header .info p{
+      font-size:18px;
+      line-height:1.5;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px ) { /*for small screens */
+    header nav{
+        display:none;
+    }
+    header .info p{
+        font-size:18px;
+        width:117%;
+        line-height:1.5;
+    }
+}
+
+/*end header*/
+
+/*start about-us*/
+#about-us{
+    padding:70px 0;
+    background:url("../images/about.png") fixed;
+    background-size:cover;
+    overflow:hidden;
+    position:relative;
+    min-height:500px;
+
+}
+
+
+#about-us .about{
+    overflow:hidden;
+    padding-bottom:50px;
+}
+#about-us .overLay,
+#about-us .overLay .container,
+#about-us .overLay .about{
+    overflow:hidden;
+}
+
+#about-us .about h2{
+
+    text-align:center;
+    font-size:50px;
+    color:#faf6f6;
+    text-transform:capitalize;
+    font-family:"Cormorant Upright";
+    margin-top:70px;
+
+}
+#about-us .about span{
+    color:#F1CA05;
+}
+#about-us .about p{
+    margin:0 auto;
+    font-size:25px;
+    text-align:center;
+    color:#e1e1e1;
+    width:50%;
+    font-style:italic;
+    font-family:"Satisfy";
+    text-transform:capitalize;
+    line-height:1.7;
+    margin-bottom:50px;
+
+}
+
+@media (max-width:767px) { /*for mobile */
+    #about-us .about p{
+        font-size:19px;
+        line-height:1.7
+
+    }
+}
+
+/*end about-us*/
+
+/*start contact*/
+#contact-us{
+   overflow:hidden;
+   padding:90px 0;
+}
+#contact-us .contact{
+    position:relative;
+    overflow:hidden;
+    float:left;
+    width:50%;
+    background:url("../images/go.jpg");
+    background-size:100% 100%;
+    min-height:600px;
+}
+#contact-us .contact .overLay>div {
+    padding:149px 0;
+    margin:0 auto;
+    color:#F1CA05;
+    overflow:hidden;
+
+}
+#contact-us .contact .overLay > div i{
+    font-size:19px;
+    width:10%;
+    float:left;
+    margin-right:1%;
+
+
+}
+#contact-us .contact .overLay{
+    background-color:rgba(0,0,0,.8);
+}
+#contact-us .contact .overLay > div div{
+    width:89%;
+    float:left;
+    position:relative;
+    bottom:22px;
+}
+#contact-us .contact .overLay > div div h3{
+    text-transform:capitalize;
+    font-style:normal;
+    color:#fff;
+}
+#contact-us .contact .overLay > div div address,
+#contact-us .contact .overLay > div div p{
+    color:rgb(145, 151, 148);
+    font-size:19px;
+    text-transform:capitalize;
+    font-style:italic;
+}
+#contact-us .form{
+    width:50%;
+    float:left;
+
+}
+#contact-us .form h2{
+    margin-top:10px;
+    text-transform:capitalize;
+    font-size:30px;
+    font-family:"Cormorant Upright";
+
+}
+
+#contact-us .form form{
+    margin-left:40px;
+}
+#contact-us .form form input:disabled{
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border:0.5px solid#ccc;
+    padding:10px;
+}
+#contact-us .form form input:nth-of-type(2),
+#contact-us .form form input:nth-of-type(3){
+    padding:10px;
+    width:49.5%;
+    margin-bottom:15px;
+}
+#contact-us .form form input[type="email"]{
+    padding:10px;
+    width:100%;
+    margin-bottom:15px
+
+}
+#contact-us .form form input:nth-of-type(7){
+    padding:10px;
+    width:100%;
+    margin-bottom:15px
+
+}
+#contact-us .form form textarea{
+    width:100%;
+    height:130px;
+    resize:none;
+    margin-bottom:20px;
+    
+
+}
+#contact-us .form form input[type="submit"]{
+    margin:0  auto;
+    width:100%;
+    padding:10px;
+    background-color:#F1CA05;
+    border:1px solid#F1CA05;
+    border-radius:5px;
+    cursor:pointer
+
+}
+
+@media (max-width:767px) { /*for mobile */
+    #contact-us .contact{
+        width:100%;
+       
+    }
+    .collector{
+        padding-left:40px !important;
+    }
+    #contact-us .contact .overLay>div {
+        padding:149px 5px;
+        
+    }
+    #contact-us .form{
+        width:100%;
+        
+    }
+    #contact-us .form form{
+        margin-left:0px;
+    }
+
+}   
+
+@media (min-width:768px) { /*for small screens */
+    #contact-us .form form input:nth-of-type(2),
+    #contact-us .form form input:nth-of-type(3){
+        padding:10px;
+        width:49.2%;
+        margin-bottom:15px;
+}
+}
+
+
+/*end contact*/
+/*start footer*/
+footer{
+    overflow:hidden;
+    padding:25px;
+    background-color:rgb(50,50,50);
+}
+footer .icons{
+    width:50%;
+    float:left;
+    text-align:center
+
+}
+footer .icons i{
+    font-size:17px;
+    color:#94938d;
+    background:#000;
+    width:31px;
+    padding:5px;
+    border-radius:50%;
+    text-align:center;
+    margin-right:4px;
+}
+footer .creator{
+    width:50%;
+    float:left;
+
+}
+footer .creator span:first-child{
+    color:Red;
+
+}
+footer .creator span:nth-child(2){
+    font-size:20px;
+    text-transform:capitalize;
+    color:#fff;
+}
+footer .creator span:nth-child(2) span{
+    color:#F1CA05;
+}
+footer .creator span:last-child{
+    color:#10d210;
+}
+
+@media (max-width:767px) { /*for mobile */
+    
+footer .icons{
+    width:100%;
+    text-align:center
+
+}
+
+footer .creator{
+    width:100%;
+  text-align:center;
+  margin-top:15px;
+
+}
+
+}
+/*end footer*/
